@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import processImage from './Components/processImage';
 import FileDropzone from './Components/fileDropzone';
 import ImageComparison from './Components/imageComparison';
+import Header from './Components/header';
 import './App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <main className="bg-zinc-100 min-h-screen relative size-full px-4">
         <div className="max-w-screen-lg mx-auto pt-10 sm:pt-16 px-2 pb-16">
           <FileDropzone className="mb-28 sm:w-1/2" onFileUpload={handleFileUpload} />
